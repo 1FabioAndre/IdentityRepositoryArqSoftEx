@@ -1,25 +1,19 @@
 package com.example.IdentityService;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-
-@Entity
 public class Identity {
-    @Id
     private String ci;
+    private String name;
 
-    public Identity() {}
-
-    public Identity(String ci) {
+    public Identity(String ci, String name) {
         this.ci = ci;
+        this.name = name;
     }
 
     public String getCi() {
         return ci;
     }
 
-    public void setCi(String ci) {
-        this.ci = ci;
+    public String getName() {
+        return name;
     }
 }
-
